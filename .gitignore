@@ -1,0 +1,48 @@
+# ---------------------------------------------------------------------------
+# Secretos: NUNCA versionados
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+!.env.example.plantilla
+api/.env
+api/.env.*
+!api/.env.example
+web/.env
+web/.env.*
+!web/.env.example
+
+# ---------------------------------------------------------------------------
+# Dependencias
+# ---------------------------------------------------------------------------
+api/vendor/
+web/node_modules/
+web/.nuxt/
+web/.output/
+web/dist/
+
+# ---------------------------------------------------------------------------
+# Artefactos de compilacion y datos de ejecucion
+# ---------------------------------------------------------------------------
+api/storage/*.key
+api/storage/app/documentos/
+api/storage/framework/cache/*
+api/storage/framework/sessions/*
+api/storage/framework/views/*
+api/storage/logs/*
+api/bootstrap/ssr/
+
+# ---------------------------------------------------------------------------
+# Pruebas
+# ---------------------------------------------------------------------------
+api/.phpunit.cache/
+api/.phpunit.result.cache
+web/coverage/
+
+# ---------------------------------------------------------------------------
+# Sistema
+# ---------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.log

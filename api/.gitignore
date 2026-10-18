@@ -1,0 +1,27 @@
+# Dependencias
+vendor/
+node_modules/
+
+# Archivos de entorno: NUNCA se suben. Solo se versiona .env.example
+.env
+.env.*
+!.env.example
+
+# Artefactos de compilacion de Laravel
+/storage/*.key
+/storage/app/documentos/
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
+/bootstrap/ssr/
+
+# Pruebas
+.phpunit.cache/
+.phpunit.result.cache
+/coverage/
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.swp
